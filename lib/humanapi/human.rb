@@ -24,7 +24,7 @@ module HumanAPI
     # Activity
 
     def self.all_activity(token = token)
-      get("activity", :access_token => token)
+      get("activity/readings", :access_token => token)
     end
 
     def self.activity(id, token = token)
@@ -46,7 +46,7 @@ module HumanAPI
     end
 
     def self.all_blood_glucose(token = token)
-      get('blood_glucose', :access_token => token)
+      get('blood_glucose/readings', :access_token => token)
     end
 
     def self.daily_blood_glucose(date, token = token)
@@ -60,7 +60,7 @@ module HumanAPI
     end
 
     def self.all_blood_pressures(token = token)
-      get('blood_pressure', :access_token => token)
+      get('blood_pressure/readings', :access_token => token)
     end
 
     def self.daily_blood_pressure(date, token = token)
@@ -74,7 +74,7 @@ module HumanAPI
     end
 
     def self.all_bmis(token = token)
-      get('bmi', :access_token => token)
+      get('bmi/readings', :access_token => token)
     end
 
     def self.daily_bmi(date, token = token)
@@ -88,7 +88,7 @@ module HumanAPI
     end
 
     def self.all_body_fats(token = token)
-      get('body_fat', :access_token => token)
+      get('body_fat/readings', :access_token => token)
     end
 
     def self.daily_body_fat(date, token = token)
@@ -108,7 +108,7 @@ module HumanAPI
     end
 
     def self.all_heart_rates(token = token)
-      get('heart_rate', :access_token => token)
+      get('heart_rate/readings', :access_token => token)
     end
 
     def self.daily_heart_rate(date, token = token)
@@ -122,7 +122,7 @@ module HumanAPI
     end
 
     def self.all_heights(token = token)
-      get('height', :access_token => token)
+      get('height/readings', :access_token => token)
     end
 
     def self.daily_height(date, token = token)
@@ -132,7 +132,7 @@ module HumanAPI
     # Location
 
     def self.all_locations(token = token)
-      get('location', :access_token => token)
+      get('location/readings', :access_token => token)
     end
 
     def self.daily_location(date, token = token)
@@ -146,7 +146,7 @@ module HumanAPI
     end
 
     def self.all_sleep(token = token)
-      get('sleep', :access_token => token)
+      get('sleep/readings', :access_token => token)
     end
 
     def self.daily_sleep(date, token = token)
@@ -160,7 +160,7 @@ module HumanAPI
     end
 
     def self.all_weight(token = token)
-      get('weight', :access_token => token)
+      get('weight/readings', :access_token => token)
     end
 
     def self.daily_weight(date, token = token)
