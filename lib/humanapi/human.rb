@@ -78,7 +78,7 @@ module HumanAPI
     end
 
     def self.daily_bmi(date, token = token)
-      get("bmi/daily/#{date.strftime('%F')}", :access_token => token)
+      get("bmi/readings/daily/#{date.strftime('%F')}", :access_token => token)
     end
 
     # Body fat
